@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>списки и контейнеры</title>
+    <style>
+        ul {
+            width: 350px;
+            list-style-type: lower-roman;
+            line-height: 1.3em;
+            font-weight: bold;
+        }
+
+        ul li ul li {
+            font-weight: normal;
+        }
+
+        div {
+            background-color: black;
+            width: 400px;
+            max-height: 4em;
+            overflow: auto;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Контейнер с кодом
+            <ul>
+                <li>Цвет фона: черный</li>
+                <li>Цвет текста: зеленый</li>
+                <li>Ширина: 400px</li>
+                <li>Максимальная высота контейнера: 4-е строки</li>
+                <li>Переполнение: автоматическое</li>
+            </ul>
+        </li>
+        <li>Список
+            <ul>
+                <li>Ширина: 350px</li>
+                <li>Тип списка: римские цифры</li>
+                <li>Тип вложенного списка: римские нижний регистр цифры</li>
+            </ul>
+        </li>
+    </ul>
+    <div>
+        <code>#!/usr/bin/env python<br>
+        print 'Hello. I am a python program.'<br>
+        name = raw_imput("What is your name?")<br>
+        print "Hello there, " + name + "!"</code>
+    </div>
+
+</body>
+
+</html>

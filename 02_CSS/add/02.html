@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>flex</title>
+    <style>
+        .main {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .nav {
+            background-color: rgb(170, 170, 170);
+            flex: 0 0 15em;
+
+        }
+
+        .content {
+            flex: 1;
+
+        }
+
+        .article {
+            background-color: rgb(133, 133, 133);
+            padding-top: 1px;
+            margin-bottom: 0.2em;
+
+        }
+        .img{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .base {
+            background-color: rgb(87, 87, 87);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>Блок навигации</h2>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватыватьвторую статью,
+                    как
+                    показано в данном примере</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="article">
+                <h2> Статья 1</h2>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+            </div>
+            <div class="article">
+                <h2>Статья 2</h2>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.
+                Картинка
+                вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+                <div class="img"><img src="icon_mail.png" alt="mail"></div>
+            </div>
+        </div>
+    </div>
+    <div class="base">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь
+        контентом.</div>
+
+</body>
+
+</html>

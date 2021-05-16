@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>заголовок</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div><input type="password" class="pswrd" name="password"></div>
+    <div><input type="password" class="cfrmpswrd" name="cfrmpassword"></div>
+    <div class="error"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(".cfrmpswrd").on("keyup", function () {
+            var value_input1 = $(".pswrd").val();
+            var value_input2 = $(this).val();
+            if (value_input1 != value_input2) {
+                $(".error").html("Пароли не совпадают");
+                $(".cfrmpswrd").css("backgroundColor", "red");
+            } else {
+                $(".error").html("");
+                $(".cfrmpswrd").css("backgroundColor", "green");
+            }
+        });
+    </script>
+</body>
+
+</html>
